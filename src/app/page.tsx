@@ -1,103 +1,224 @@
-import Image from "next/image";
+'use client'
+
+import { motion } from 'framer-motion'
+import { ChevronRight, Database, Shield, TrendingUp, Zap, Globe, DollarSign } from 'lucide-react'
+import Link from 'next/link'
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 }
+}
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Hero Section */}
+      <motion.section 
+        initial="initial"
+        animate="animate"
+        variants={staggerContainer}
+        className="relative overflow-hidden px-6 py-24 sm:px-12 sm:py-32"
+      >
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#7c3aed,transparent_50%)] opacity-20"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#06b6d4,transparent_50%)] opacity-20"></div>
+        
+        <div className="mx-auto max-w-7xl relative">
+          <motion.div variants={fadeInUp} className="text-center">
+            <motion.h1 
+              variants={fadeInUp}
+              className="text-4xl font-bold tracking-tight text-white sm:text-6xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
+            >
+              Kiln External Sales Engineer
+            </motion.h1>
+            <motion.p 
+              variants={fadeInUp}
+              className="mt-6 text-lg leading-8 text-gray-300 max-w-3xl mx-auto"
+            >
+              A comprehensive showcase of staking infrastructure, DeFi solutions, and validator performance analysis. 
+              Demonstrating enterprise-grade blockchain services with modern technical implementations.
+            </motion.p>
+            <motion.div 
+              variants={fadeInUp}
+              className="mt-10 flex items-center justify-center gap-x-6"
+            >
+              <Link
+                href="#tasks"
+                className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 hover:scale-105"
+              >
+                Explore Solutions
+              </Link>
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-300 hover:text-white transition-colors">
+                View Code <span aria-hidden="true">→</span>
+              </a>
+            </motion.div>
+          </motion.div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </motion.section>
+
+      {/* Tasks Overview */}
+      <motion.section 
+        id="tasks"
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={staggerContainer}
+        className="py-24 sm:py-32 bg-white/5 backdrop-blur-sm"
+      >
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div variants={fadeInUp} className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Exercise Deliverables
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-300">
+              Three comprehensive tasks showcasing blockchain infrastructure expertise
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            variants={staggerContainer}
+            className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none"
+          >
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              {/* Task 1 */}
+              <motion.div variants={fadeInUp} className="group">
+                <Link href="/presentation" className="block">
+                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 p-8 shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white relative z-10">
+                      <Globe className="h-5 w-5 flex-none" />
+                      Task #1: Product Presentation
+                    </dt>
+                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-indigo-100 relative z-10">
+                      <p className="flex-auto">
+                        Two-slide presentation showcasing Kiln Connect (Staking API) and Kiln DeFi (Yield Vaults) 
+                        with comprehensive feature breakdowns and business benefits.
+                      </p>
+                      <p className="mt-6 flex items-center gap-x-2 text-sm font-semibold">
+                        <span>View Presentation</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </p>
+                    </dd>
+                  </div>
+                </Link>
+              </motion.div>
+
+              {/* Task 2 */}
+              <motion.div variants={fadeInUp} className="group">
+                <Link href="/support" className="block">
+                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 p-8 shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white relative z-10">
+                      <Shield className="h-5 w-5 flex-none" />
+                      Task #2: Customer Support
+                    </dt>
+                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-cyan-100 relative z-10">
+                      <p className="flex-auto">
+                        Technical troubleshooting guide for DeFi vault deposits, including transaction analysis, 
+                        error simulation, and step-by-step resolution process.
+                      </p>
+                      <p className="mt-6 flex items-center gap-x-2 text-sm font-semibold">
+                        <span>View Support Guide</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </p>
+                    </dd>
+                  </div>
+                </Link>
+              </motion.div>
+
+              {/* Task 3 */}
+              <motion.div variants={fadeInUp} className="group">
+                <Link href="/validator-analysis" className="block">
+                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-8 shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white relative z-10">
+                      <TrendingUp className="h-5 w-5 flex-none" />
+                      Task #3: Validator Analysis
+                    </dt>
+                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-emerald-100 relative z-10">
+                      <p className="flex-auto">
+                        Performance comparison tool analyzing top 50 validators by APY across two wallet addresses, 
+                        with real-time API integration and comprehensive metrics.
+                      </p>
+                      <p className="mt-6 flex items-center gap-x-2 text-sm font-semibold">
+                        <span>View Analysis</span>
+                        <ChevronRight className="h-4 w-4" />
+                      </p>
+                    </dd>
+                  </div>
+                </Link>
+              </motion.div>
+            </dl>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Technologies Used */}
+      <motion.section 
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={staggerContainer}
+        className="py-24 sm:py-32"
+      >
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div variants={fadeInUp} className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Technologies & Implementation
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-300">
+              Built with modern development tools and best practices
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            variants={staggerContainer}
+            className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8"
+          >
+            {[
+              { name: 'Python', description: 'API integration & data analysis', icon: Database },
+              { name: 'React/Next.js', description: 'Modern web presentation', icon: Globe },
+              { name: 'Kiln API', description: 'Blockchain infrastructure', icon: Zap },
+              { name: 'TypeScript', description: 'Type-safe development', icon: DollarSign }
+            ].map((tech, index) => (
+              <motion.div
+                key={tech.name}
+                variants={fadeInUp}
+                className="rounded-2xl bg-white/5 backdrop-blur-sm p-6 text-center hover:bg-white/10 transition-all duration-300"
+              >
+                <tech.icon className="mx-auto h-12 w-12 text-indigo-400 mb-4" />
+                <h3 className="text-lg font-semibold text-white">{tech.name}</h3>
+                <p className="mt-2 text-sm text-gray-300">{tech.description}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Footer */}
+      <footer className="bg-black/20 backdrop-blur-sm">
+        <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+          <div className="flex justify-center space-x-6 md:order-2">
+            <p className="text-sm leading-5 text-gray-400">
+              External Sales Engineer Exercise - Kiln
+            </p>
+          </div>
+          <div className="mt-8 md:order-1 md:mt-0">
+            <p className="text-center text-sm leading-5 text-gray-400">
+              Built with Next.js, TypeScript, and Tailwind CSS
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
-  );
+  )
 }
