@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kiln External Sales Engineer Exercise - Website
 
-## Getting Started
+A beautiful, modern React website showcasing all three deliverables from the Kiln External Sales Engineer exercise.
 
-First, run the development server:
+## 🌟 Features
+
+- **Stunning Modern Design**: Dark gradient theme with smooth animations
+- **Responsive Layout**: Perfect on desktop, tablet, and mobile
+- **Interactive Navigation**: Smooth transitions between sections
+- **Professional Presentation**: Enterprise-grade visual design
+- **Fast Performance**: Built with Next.js 15 and optimized for speed
+
+## 🎯 Showcased Deliverables
+
+### Task #1: Product Presentation
+Interactive slides showcasing:
+- **Kiln Connect**: White-label staking API & SDK
+- **Kiln DeFi**: Vaults & yield aggregation
+- Complete feature breakdowns and business benefits
+
+### Task #2: Customer Support
+Comprehensive troubleshooting guide featuring:
+- Step-by-step transaction analysis
+- Error simulation and diagnosis  
+- Technical resolution process
+- Professional support methodology
+
+### Task #3: Validator Analysis
+Live performance comparison displaying:
+- Real API integration results
+- Statistical analysis of 1000+ validators
+- Top 50 validator performance metrics
+- Technical implementation details
+
+## 🚀 Technologies Used
+
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **Framer Motion**: Smooth animations
+- **Lucide React**: Beautiful icons
+
+## 🛠️ Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📱 Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `/` - Homepage with overview of all tasks
+- `/presentation` - Task #1: Product presentation slides
+- `/support` - Task #2: Customer support case study
+- `/validator-analysis` - Task #3: Validator performance analysis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Design Features
 
-## Learn More
+- **Gradient Backgrounds**: Sophisticated purple-to-slate gradients
+- **Glass Morphism**: Backdrop blur effects for modern aesthetics
+- **Micro-interactions**: Hover effects and smooth transitions
+- **Typography**: Clean, readable fonts with proper hierarchy
+- **Color Coding**: Task-specific color schemes for easy navigation
 
-To learn more about Next.js, take a look at the following resources:
+## 📊 Results Highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website showcases impressive real-world results:
+- **300+ validators** analyzed for Wallet A
+- **750+ validators** analyzed for Wallet B  
+- **1.57% APY advantage** discovered for Wallet B
+- **5.23% average gross APY** for top-performing wallet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Purpose
 
-## Deploy on Vercel
+This website serves as a comprehensive portfolio piece demonstrating:
+- Technical expertise in blockchain infrastructure
+- Professional presentation skills
+- Customer support excellence
+- Full-stack development capabilities
+- Modern UI/UX design principles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Perfect for showcasing to potential clients, employers, or stakeholders in the blockchain and DeFi space.
