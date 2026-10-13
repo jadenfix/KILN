@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowLeft, ArrowRight, AlertCircle, CheckCircle, Code, Search, Play, Wrench } from 'lucide-react'
+import { ArrowLeft, ArrowRight, AlertCircle, CheckCircle, Search, Play, Wrench } from 'lucide-react'
 import Link from 'next/link'
 
 const fadeInUp = {
@@ -53,7 +53,7 @@ export default function Task2() {
             variants={fadeInUp}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Technical troubleshooting guide: "Why doesn't my 2 USDC deposit go through?"
+            Technical troubleshooting guide: &quot;Why doesn&apos;t my 2 USDC deposit go through?&quot;
           </motion.p>
         </div>
       </motion.section>
@@ -116,7 +116,7 @@ export default function Task2() {
                   </code>
                 </div>
                 <p className="text-gray-400 text-sm mt-2">
-                  → Find a vault whose contractAddress matches exactly ⇒ confirms it's the Kiln × Morpho Base vault.
+                  → Find a vault whose contractAddress matches exactly ⇒ confirms it&apos;s the Kiln × Morpho Base vault.
                 </p>
               </div>
 

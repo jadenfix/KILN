@@ -49,7 +49,7 @@ export default function Support() {
               Customer Support Case
             </h2>
             <p className="text-xl text-cyan-100 mb-4">
-              "Why doesn't my 2 USDC deposit go through?"
+              &quot;Why doesn&apos;t my 2 USDC deposit go through?&quot;
             </p>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-left">
               <p className="text-cyan-200 text-sm">
@@ -183,19 +183,19 @@ export default function Support() {
                   <div className="text-gray-400 mb-2">Step 1: Approve vault to spend USDC</div>
                   <div className="text-green-300">await usdcContract.connect(userSigner)</div>
                   <div className="text-green-300">.approve(vaultAddress,</div>
-                  <div className="text-green-300">ethers.utils.parseUnits("2", 6));</div>
+                  <div className="text-green-300">ethers.utils.parseUnits(&quot;2&quot;, 6));</div>
                 </div>
                 
                 <div className="bg-slate-800 rounded-lg p-4 font-mono text-xs">
                   <div className="text-gray-400 mb-2">Step 2: Resubmit deposit transaction</div>
-                  <div className="text-blue-300">// Same deposit(2 USDC) transaction</div>
+                  <div className="text-blue-300">{"// Same deposit(2 USDC) transaction"}</div>
                 </div>
                 
                 <div className="bg-slate-800 rounded-lg p-4 font-mono text-xs">
                   <div className="text-gray-400 mb-2">Step 3: Verify allowance (optional)</div>
                   <div className="text-purple-300">const allowance = await usdcContract</div>
                   <div className="text-purple-300">.allowance(user, vaultAddress);</div>
-                  <div className="text-gray-400 mt-1">// Should be ≥ 2,000,000</div>
+                  <div className="text-gray-400 mt-1">{"// Should be ≥ 2,000,000"}</div>
                 </div>
               </div>
             </motion.div>
