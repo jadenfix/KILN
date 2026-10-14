@@ -47,6 +47,7 @@ export default function Introduction() {
               A comprehensive showcase demonstrating deep expertise in blockchain infrastructure, DeFi protocols, 
               and validator performance analysis. Welcome to my complete solution for the Kiln External Sales Engineer exercise.
             </motion.p>
+            <p className="mt-4 text-sm text-gray-300">Static exercise portfolio · Metrics reflect the submitted analysis.</p>
             <motion.div 
               variants={fadeInUp}
               className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto text-sm"
@@ -56,12 +57,12 @@ export default function Introduction() {
                 <div className="text-gray-400">Analyzed Across Both Wallets</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
-                <div className="font-semibold text-blue-300">Real-Time API</div>
-                <div className="text-gray-400">Live Kiln Integration</div>
+                <div className="font-semibold text-blue-300">API Walkthrough</div>
+                <div className="text-gray-400">Exercise Documentation</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
-                <div className="font-semibold text-purple-300">Enterprise Grade</div>
-                <div className="text-gray-400">Production-Ready Code</div>
+                <div className="font-semibold text-purple-300">Implementation Guide</div>
+                <div className="text-gray-400">Reference Code</div>
               </div>
             </motion.div>
             <motion.div 
@@ -193,7 +194,7 @@ export default function Introduction() {
               Exercise Results & Impact
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Real-world analysis demonstrating technical depth and business acumen
+              Reported exercise analysis demonstrating technical depth and business acumen
             </p>
           </motion.div>
           
@@ -221,8 +222,8 @@ export default function Introduction() {
             
             <motion.div variants={fadeInUp} className="text-center">
               <div className="text-4xl font-bold text-yellow-400 mb-2">100%</div>
-              <div className="text-gray-300 mb-1">API Success Rate</div>
-              <div className="text-sm text-gray-400">Robust error handling</div>
+              <div className="text-gray-300 mb-1">Reported Exercise Checks</div>
+              <div className="text-sm text-gray-400">Submitted exercise result</div>
             </motion.div>
           </motion.div>
         </div>
