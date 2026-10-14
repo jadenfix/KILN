@@ -259,7 +259,7 @@ export default function Introduction() {
                 </div>
                 <div className="border-l-4 border-blue-400 pl-4">
                   <div className="font-semibold text-blue-300">Scale Advantage</div>
-                  <div className="text-gray-300 text-sm">Wallet B's 750 validators vs Wallet A's 300 demonstrates the benefits of diversified validator portfolios.</div>
+                  <div className="text-gray-300 text-sm">Wallet B&apos;s 750 validators vs Wallet A&apos;s 300 demonstrates the benefits of diversified validator portfolios.</div>
                 </div>
                 <div className="border-l-4 border-purple-400 pl-4">
                   <div className="font-semibold text-purple-300">Technical Excellence</div>
@@ -319,7 +319,7 @@ export default function Introduction() {
               { name: 'React/Next.js', description: 'Modern web presentation', icon: Globe },
               { name: 'Kiln API', description: 'Blockchain infrastructure', icon: Zap },
               { name: 'TypeScript', description: 'Type-safe development', icon: DollarSign }
-            ].map((tech, index) => (
+            ].map((tech) => (
               <motion.div
                 key={tech.name}
                 variants={fadeInUp}
@@ -348,8 +348,8 @@ export default function Introduction() {
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
             This exercise demonstrates the technical depth, analytical rigor, and professional execution 
-            that I bring to complex blockchain infrastructure challenges. Let's discuss how I can contribute 
-            to Kiln's continued growth and technical excellence.
+            that I bring to complex blockchain infrastructure challenges. Let&apos;s discuss how I can contribute 
+            to Kiln&apos;s continued growth and technical excellence.
           </motion.p>
           
           <motion.div variants={staggerContainer} className="grid md:grid-cols-3 gap-8 mb-12">
@@ -377,7 +377,7 @@ export default function Introduction() {
               href="mailto:jadenfix123@gmail.com"
               className="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:scale-105 flex items-center gap-2"
             >
-              <span>Let's Connect</span>
+              <span>Let&apos;s Connect</span>
               <ChevronRight className="h-4 w-4" />
             </a>
             <a

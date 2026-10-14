@@ -53,7 +53,7 @@ export default function Task1() {
             variants={fadeInUp}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Two comprehensive slides showcasing Kiln's enterprise-grade blockchain infrastructure solutions
+            Two comprehensive slides showcasing Kiln&apos;s enterprise-grade blockchain infrastructure solutions
           </motion.p>
         </div>
       </motion.section>
@@ -100,8 +100,8 @@ export default function Task1() {
                   <div className="text-sm font-mono text-green-300">
                     <div>POST /eth/stakes</div>
                     <div className="text-white/60 mt-1">{"{"}</div>
-                    <div className="text-white/60 ml-4">"amount": "32000000000000000000",</div>
-                    <div className="text-white/60 ml-4">"wallet": "0x..."</div>
+                    <div className="text-white/60 ml-4">&quot;amount&quot;: &quot;32000000000000000000&quot;,</div>
+                    <div className="text-white/60 ml-4">&quot;wallet&quot;: &quot;0x...&quot;</div>
                     <div className="text-white/60">{"}"}</div>
                     <div className="text-blue-300 mt-2">✓ Stake successfully initiated</div>
                   </div>
@@ -148,7 +148,7 @@ export default function Task1() {
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-2">
                   <DollarSign className="h-4 w-4 text-green-400 flex-shrink-0" />
-                  Drive new revenue by adding "Earn" to your existing UX
+                  Drive new revenue by adding &quot;Earn&quot; to your existing UX
                 </li>
                 <li className="flex items-center gap-2">
                   <Shield className="h-4 w-4 text-blue-400 flex-shrink-0" />
@@ -233,7 +233,7 @@ export default function Task1() {
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
-                  Single "deposit" call for stablecoins (USDC, DAI) or ETH
+                  Single &quot;deposit&quot; call for stablecoins (USDC, DAI) or ETH
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
@@ -270,7 +270,7 @@ export default function Task1() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-orange-400 flex-shrink-0" />
-                  "Deploy in one day" on any EVM chain (Ethereum, Base, Polygon)
+                  &quot;Deploy in one day&quot; on any EVM chain (Ethereum, Base, Polygon)
                 </li>
               </ul>
             </motion.div>

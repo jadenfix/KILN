@@ -389,7 +389,7 @@ export default function Task3() {
               Analysis Complete!
             </h3>
             <p className="text-gray-300 mb-6">
-              You've seen presentations, support methodology, and data analysis. Ready for the wrap-up?
+              You&apos;ve seen presentations, support methodology, and data analysis. Ready for the wrap-up?
             </p>
             <Link 
               href="/thank-you"

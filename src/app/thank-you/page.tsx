@@ -65,7 +65,7 @@ export default function ThankYou() {
             variants={fadeInUp}
             className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
           >
-            You've just experienced a comprehensive showcase of technical expertise, 
+            You&apos;ve just experienced a comprehensive showcase of technical expertise, 
             customer support excellence, and data-driven insights. This represents my 
             commitment to delivering exceptional results for Kiln.
           </motion.p>
@@ -95,10 +95,10 @@ export default function ThankYou() {
             className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-white mb-4">What You've Experienced</h2>
+              <h2 className="text-3xl font-bold text-white mb-4">What You&apos;ve Experienced</h2>
               <p className="text-gray-300 max-w-2xl mx-auto">
                 A complete demonstration of the skills and expertise that make me the right fit 
-                for Kiln's External Sales Engineer role.
+                for Kiln&apos;s External Sales Engineer role.
               </p>
             </div>
             
@@ -174,7 +174,7 @@ export default function ThankYou() {
             variants={fadeInUp}
             className="bg-gradient-to-r from-purple-500/10 to-pink-600/10 border border-purple-500/20 rounded-2xl p-8"
           >
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Why I'm the Right Fit</h3>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Why I&apos;m the Right Fit</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-purple-300 mb-3">Technical Excellence</h4>
@@ -212,15 +212,15 @@ export default function ThankYou() {
             variants={fadeInUp}
             className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 text-center"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Let&apos;s Connect</h3>
             <p className="text-gray-300 mb-8">
-              I'm excited about the opportunity to bring this level of expertise and dedication 
-              to Kiln's sales engineering team. Let's discuss how I can contribute to your success.
+              I&apos;m excited about the opportunity to bring this level of expertise and dedication 
+              to Kiln&apos;s sales engineering team. Let&apos;s discuss how I can contribute to your success.
             </p>
             
             <div className="grid md:grid-cols-3 gap-4 mb-8">
               <a 
-                href="mailto:jaden@example.com" 
+                href="mailto:jadenfix123@gmail.com" 
                 className="flex items-center justify-center gap-2 p-4 bg-blue-500/20 border border-blue-500/30 rounded-lg hover:bg-blue-500/30 transition-colors"
               >
                 <Mail className="h-5 w-5 text-blue-400" />
@@ -273,7 +273,7 @@ export default function ThankYou() {
             </h3>
             <p className="text-purple-100 mb-6">
               This comprehensive showcase demonstrates my readiness to contribute 
-              to Kiln's growth from day one.
+              to Kiln&apos;s growth from day one.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
@@ -283,7 +283,7 @@ export default function ThankYou() {
                 Review the Journey
               </Link>
               <a 
-                href="mailto:jaden@example.com?subject=Kiln Sales Engineer - Let's Connect"
+                href="mailto:jadenfix123@gmail.com?subject=Kiln Sales Engineer - Let's Connect"
                 className="px-6 py-3 bg-purple-700 text-white font-semibold rounded-lg hover:bg-purple-800 transition-colors"
               >
                 Schedule Interview

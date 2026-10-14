@@ -1,0 +1,33 @@
+name: Production runtime
+on:
+  pull_request:
+  push:
+    branches: [main, fix/production-build-contact-links]
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+      - run: npx playwright install --with-deps chromium
+      - name: Verify actual production routes and navigation
+        run: |
+          npm start -- --hostname 127.0.0.1 --port 3214 > /tmp/kiln-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:3214/ > /dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/production-smoke.mjs

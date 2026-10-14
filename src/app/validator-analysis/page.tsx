@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowLeft, TrendingUp, Database, Zap, BarChart3, CheckCircle, Code, Globe } from 'lucide-react'
+import { ArrowLeft, TrendingUp, Database, Zap, BarChart3, CheckCircle, Code } from 'lucide-react'
 import Link from 'next/link'
 
 const fadeInUp = {
@@ -266,13 +266,13 @@ export default function ValidatorAnalysis() {
             </div>
             <div className="text-sm font-mono text-gray-300 overflow-x-auto">
               <div className="text-blue-300">def analyze_wallet(name: str, address: str) -&gt; Dict[str, float]:</div>
-              <div className="text-gray-400 ml-4">"""Analyze validator performance for a given wallet."""</div>
+              <div className="text-gray-400 ml-4">&quot;&quot;&quot;Analyze validator performance for a given wallet.&quot;&quot;&quot;</div>
               <div className="ml-4">stakes = fetch_stakes(address)</div>
               <div className="ml-4 text-purple-300">if not stakes:</div>
-              <div className="ml-8 text-red-300">return {"{"}"count": 0, "avg_cl": 0, "avg_el": 0, "avg_gr": 0{"}"}</div>
+              <div className="ml-8 text-red-300">return {"{"}&quot;count&quot;: 0, &quot;avg_cl&quot;: 0, &quot;avg_el&quot;: 0, &quot;avg_gr&quot;: 0{"}"}</div>
               <div className="ml-4 text-gray-400"># Sort by gross_apy and take top 50</div>
               <div className="ml-4">top_validators = sorted(stakes, </div>
-              <div className="ml-8">key=lambda x: x.get("gross_apy", 0), reverse=True)[:50]</div>
+              <div className="ml-8">key=lambda x: x.get(&quot;gross_apy&quot;, 0), reverse=True)[:50]</div>
               <div className="ml-4 text-gray-400"># Calculate averages...</div>
               <div className="ml-4 text-green-300">return statistics.mean(gross_apys)</div>
             </div>
